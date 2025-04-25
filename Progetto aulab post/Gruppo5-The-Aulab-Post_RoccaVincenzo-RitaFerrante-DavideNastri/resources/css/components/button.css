@@ -1,0 +1,743 @@
+/* ==================== */
+/* STILI GENERALI BOTTONI */
+/* ==================== */
+
+.btn {
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+/* ==================== */
+/* BOTTONI TABELLA ARTICOLI (REVISORE) */
+/* ==================== */
+
+/* Bottone per leggere l'articolo */
+.button-article-read {
+  background-color: var(--color-background);
+  color: var(--color-leggi);
+}
+
+.button-article-read:hover {
+  background-color: var(--color-background);
+  color: var(--color-leggi-dark);
+
+}
+
+/* Bottone per accettare l'articolo */
+.button-article-accept {
+  background-color: var(--color-background);
+  color: var(--color-accetta);
+}
+
+.button-article-accept:hover {
+  background-color: var(--color-success-dark);
+  color: var(--color-accetta-dark);
+}
+
+/* Bottone per rifiutare l'articolo */
+.button-article-reject {
+  background-color: var(--color-background);
+  color: var(--color-rifiuta);
+}
+
+.button-article-reject:hover {
+  background-color: var(--color-danger-dark);
+  color: var(--color-rifiuta-dark);
+}
+
+/* Bottone per annullare l'azione */
+.button-article-cancel {
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+}
+
+.button-article-cancel:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+/* Bottone per confermare l'azione */
+.button-article-confirm {
+  background-color: var(--color-success);
+  color: var(--color-text-inverse);
+}
+
+.button-article-confirm:hover {
+  background-color: var(--color-success-dark);
+}
+
+/* Bottone per annullare la revisione */
+.button-article-undo {
+  background-color: var(--color-warning);
+  color: var(--color-text-dark);
+}
+
+.button-article-undo:hover {
+  background-color: var(--color-warning-dark);
+}
+
+/* ==================== */
+/* BOTTONI DASHBOARD WRITER */
+/* ==================== */
+
+/* Bottone per creare un nuovo articolo */
+.button-writer-create {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.button-writer-create:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Bottone per modificare un articolo */
+.button-writer-edit {
+  background-color: var(--color-background);
+  color: var(--color-modifica);
+}
+
+.button-writer-edit:hover {
+  background-color: var(--color-background);
+  color: var(--color-modifica-dark);
+}
+
+/* Bottone per visualizzare un articolo */
+.button-writer-view {
+  background-color: var(--color-background);
+  color: var(--color-leggi);
+}
+
+.button-writer-view:hover {
+  background-color: var(--color-background);
+  color: var(--color-leggi-dark);
+}
+
+/* Bottone per eliminare un articolo */
+
+.button-writer-delete {
+  background-color: var(--color-background);
+  color: var(--color-rifiuta);
+}
+
+.button-writer-delete:hover {
+  background-color: var(--color-background);
+  color: var(--color-rifiuta-dark);
+}
+
+/* ==================== */
+/* BOTTONI CREAZIONE/MODIFICA ARTICOLO */
+/* ==================== */
+
+/* Bottone per inviare il form dell'articolo */
+.button-article-submit,
+.article-create-page__submit-button,
+.article-edit-page__submit-button {
+  background-color: var(--color-success);
+  color: var(--color-text-inverse);
+  padding: 0.5rem 1.5rem;
+}
+
+.button-article-submit:hover,
+.article-create-page__submit-button:hover,
+.article-edit-page__submit-button:hover {
+  background-color: var(--color-success-dark);
+}
+
+/* ==================== */
+/* BOTTONI AUTENTICAZIONE */
+/* ==================== */
+
+/* Bottone per inviare il form di login/registrazione */
+.button-auth-submit,
+.login-page__submit-button,
+.register-page__submit-button {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.button-auth-submit:hover,
+.login-page__submit-button:hover,
+.register-page__submit-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Bottoni per social login */
+.button-auth-social {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ==================== */
+/* BOTTONI PAGINA CARRIERE */
+/* ==================== */
+
+/* Bottone per inviare candidatura */
+.button-career-submit,
+.careers-page__submit-button {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 0.5rem 1.5rem;
+}
+
+.button-career-submit:hover,
+.careers-page__submit-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ==================== */
+/* BOTTONI HOMEPAGE */
+/* ==================== */
+
+/* Bottone call-to-action principale */
+.button-home-cta,
+.home-hero__cta-button {
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+}
+
+.button-home-cta:hover,
+.home-hero__cta-button:hover {
+  background-color: var(--color-accent-dark);
+}
+
+/* Bottone secondario */
+.button-home-secondary,
+.home-hero__secondary-button {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+}
+
+.button-home-secondary:hover,
+.home-hero__secondary-button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+/* ==================== */
+/* BOTTONI NAVBAR */
+/* ==================== */
+
+/* Bottone login nella navbar */
+.button-navbar-login {
+  background-color: transparent;
+  color: var(--color-text-inverse);
+  border: 1px solid var(--color-text-inverse);
+}
+
+.button-navbar-login:hover {
+  background-color: var(--color-text-inverse);
+  color: var(--color-primary);
+}
+
+/* Bottone registrazione nella navbar */
+.button-navbar-register {
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.button-navbar-register:hover {
+  background-color: var(--color-accent-dark);
+}
+
+/* ==================== */
+/* BOTTONI ADMIN */
+/* ==================== */
+
+/* Bottone per approvare richieste */
+.button-admin-approve {
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.button-admin-approve:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+}
+
+/* Bottone per rifiutare richieste */
+.button-admin-reject {
+  background-color: var(--color-background);
+  color: var(--color-rifiuta);
+}
+
+.button-admin-reject:hover {
+  background-color: var(--color-rifiuta-dark);
+  transform: translateY(-2px);
+}
+
+/* ==================== */
+/* BOTTONI COMMENTI */
+/* ==================== */
+
+/* Bottone per inviare un commento */
+.button-comment-submit {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.button-comment-submit:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ==================== */
+/* BOTTONI RICERCA */
+/* ==================== */
+
+/* Bottone per avviare la ricerca */
+.button-search {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.button-search:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ==================== */
+/* BOTTONI ADMIN (METODOLOGIA BEM) */
+/* ==================== */
+
+/* Blocco base per bottoni admin */
+.button-admin {
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Modificatore: bottone per attivare ruolo */
+.button-admin--activate {
+  background-color: var(--color-accetta);
+  color: var(--color-text-inverse);
+}
+
+.button-admin--activate:hover {
+  background-color: var(--color-accetta-dark);
+  transform: translateY(-2px);
+}
+
+/* Modificatore: bottone per eliminare richiesta */
+.button-admin--delete {
+  background-color: var(--color-rifiuta);
+  color: var(--color-text-inverse);
+}
+
+.button-admin--delete:hover {
+  background-color: var(--color-rifiuta-dark);
+  transform: translateY(-2px);
+}
+
+/* Modificatore: bottone per annullare azione */
+.button-admin--cancel {
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+}
+
+.button-admin--cancel:hover {
+  background-color: var(--color-secondary-dark);
+  transform: translateY(-2px);
+}
+
+/* Modificatore: bottone per confermare azione */
+.button-admin--confirm {
+  background-color: var(--color-accetta);
+  color: var(--color-text-inverse);
+}
+
+.button-admin--confirm:hover {
+  background-color: var(--color-accetta-dark);
+  transform: translateY(-2px);
+}
+
+/* Modificatore: bottone per confermare eliminazione */
+.button-admin--confirm-delete {
+  background-color: var(--color-rifiuta);
+  color: var(--color-text-inverse);
+}
+
+.button-admin--confirm-delete:hover {
+  background-color: var(--color-rifiuta-dark);
+  transform: translateY(-2px);
+}
+
+/* ==================== */
+/* BOTTONI PAGINA ARTICOLO */
+/* ==================== */
+
+/* Bottone per tornare alla lista articoli */
+.article-page__actions .btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 0.5rem 1.5rem;
+}
+
+.article-page__actions .btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Bottone per leggere l'articolo completo */
+.category-article__button {
+  align-self: flex-start;
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.category-article__button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+/* Bottone per leggere l'articolo nella card */
+.article-card__button {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.article-card__button:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+}
+
+/* ==================== */
+/* BOTTONI DASHBOARD */
+/* ==================== */
+
+/* Stili generali bottoni dashboard */
+.dashboard-btn {
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dashboard-btn i {
+  font-size: 0.9rem;
+}
+
+/* Bottone per accettare */
+.dashboard-btn-accept {
+  background-color: var(--color-accetta);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-accept:hover {
+  background-color: var(--color-accetta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per rifiutare */
+.dashboard-btn-reject {
+  background-color: var(--color-rifiuta);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-reject:hover {
+  background-color: var(--color-rifiuta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per modificare */
+.dashboard-btn-edit {
+  background-color: var(--color-modifica);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-edit:hover {
+  background-color: var(--color-modifica-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per leggere */
+.dashboard-btn-read {
+  background-color: var(--color-leggi);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-read:hover {
+  background-color: var(--color-leggi-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per annullare */
+.dashboard-btn-undo {
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-undo:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per creare */
+.dashboard-btn-create {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-create:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per visualizzare */
+.dashboard-btn-view {
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-view:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per confermare */
+.dashboard-btn-confirm {
+  background-color: var(--color-accetta);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-confirm:hover {
+  background-color: var(--color-accetta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per annullare azione */
+.dashboard-btn-cancel {
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-cancel:hover {
+  background-color: var(--color-secondary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per attivare ruolo */
+.dashboard-btn-activate {
+  background-color: var(--color-accetta);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-activate:hover {
+  background-color: var(--color-accetta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per eliminare */
+.dashboard-btn-delete {
+  background-color: var(--color-rifiuta);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-delete:hover {
+  background-color: var(--color-rifiuta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile per il pulsante di conferma */
+.btn-confirm-action {
+  background-color: var(--color-accetta);
+  color: var(--color-text-inverse);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  min-width: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 38px; /* Altezza fissa uguale al pulsante attiva */
+}
+
+.btn-confirm-action:hover {
+  background-color: var(--color-accetta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile per il pulsante di annullamento */
+.btn-cancel-action {
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  min-width: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 38px; /* Altezza fissa uguale al pulsante attiva */
+}
+
+.btn-cancel-action:hover {
+  background-color: var(--color-secondary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Effetto hover generale per tutti i bottoni */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==================== */
+/* ADMIN DASHBOARD BUTTONS */
+/* ==================== */
+
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--color-primary-light) !important;
+}
+
+.bg-accent {
+  background-color: var(--color-accent) !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.text-primary:hover {
+  color: var(--color-primary-dark) !important;
+  transform: translateX(5px);
+}
+
+.text-accent {
+  color: var(--color-accent) !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.text-accent:hover {
+  color: var(--color-accent-dark) !important;
+  transform: translateX(5px);
+}
+
+.admin-content-card .card-header {
+  border-radius: 10px 10px 0 0;
+  font-weight: 600;
+}
+
+.admin-content-card .list-group-item a i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.admin-content-card .list-group-item:hover i {
+  transform: rotate(5deg);
+}
+
+/* SIDEBAR BOTTONI SEARCH */
+
+.btn-primary {
+   background-color: var(--color-primary-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark) ;
+}
+
+/* BOTTONE TORNA HOME VISTA SHOW */
+
+.btn-outline-primary {
+  background-color: var(--color-primary-light);
+}
+
+/* SFONDO TASTI */
+.btn-bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.btn-bg-primary-light:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-bg-primary-dark:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* BOTTONE MODIFICA VISTA SHOW */
+
+.btn-warning {
+  background-color: var(--color-modifica);
+  display: none;
+
+
+}
+.btn-warning:hover {
+  background-color: var(--color-modifica-dark);
+  display: none;
+
+}
+
+
+
+
+/* BOTTONE CHI SIAMO FOOTER */
+/* .text-decoration-none { */
+  /* display: none */
+/* } */

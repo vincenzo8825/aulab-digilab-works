@@ -1,0 +1,27 @@
+# Regole globali per tutti i progetti
+**/.DS_Store
+**/.vs/
+**/.vscode/
+**/*.log
+**/Thumbs.db
+**/node_modules/
+**/__pycache__/
+**/.idea/
+**/dist/
+**/build/
+**/.env
+**/.env.local
+
+# File temporanei e di sistema
+**/*~
+**/*.tmp
+**/*.bak
+Desktop.ini
+
+# Aggiungi queste nuove regole in fondo al file
+/[Pp]rova laravel/prova/vendor/
+/[Pp]rova laravel/prova/node_modules/
+/laravel2/vendor/
+/Esercitazione blog laravel/Blog/vendor/
+/**/storage/framework/cache/
+/**/storage/logs/

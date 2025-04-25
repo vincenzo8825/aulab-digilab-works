@@ -1,0 +1,83 @@
+/* ==================== */
+/* TABLES */
+/* ==================== */
+.articles-table,
+.writer-articles-table,
+.requests-table {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.articles-table__header,
+.writer-articles-table__header,
+.requests-table__header {
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-inverse);
+}
+
+.table .table-dark,
+.table-dark,
+.table thead.table-dark,
+.table > thead.table-dark {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text-inverse) !important;
+}
+
+.articles-table__body tr,
+.writer-articles-table__body tr,
+.requests-table__body tr {
+  transition: background-color 0.3s ease;
+}
+
+.articles-table__body tr:hover,
+.writer-articles-table__body tr:hover,
+.requests-table__body tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.articles-table__actions,
+.writer-articles-table__actions,
+.requests-table__actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.articles-table__action-link,
+.writer-articles-table__action-link,
+.requests-table__action-link {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Stili per le tabelle nelle dashboard */
+.table-dark, 
+.table .table-dark {
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-inverse) !important;
+  border-color: var(--color-primary-dark) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table {
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.table th, 
+.table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}

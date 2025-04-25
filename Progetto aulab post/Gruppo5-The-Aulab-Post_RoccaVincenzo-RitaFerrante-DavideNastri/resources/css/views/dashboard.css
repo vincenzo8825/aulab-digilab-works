@@ -1,0 +1,361 @@
+/* ==================== */
+/* DASHBOARD */
+/* ==================== */
+.admin-dashboard,
+.revisor-dashboard,
+.writer-dashboard {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.admin-dashboard__header,
+.revisor-dashboard__header,
+.writer-dashboard__header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%) !important;
+  color: var(--color-text-inverse);
+  padding: var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+}
+
+.admin-dashboard__title,
+.revisor-dashboard__title,
+.writer-dashboard__title {
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.admin-dashboard__alert,
+.revisor-dashboard__alert,
+.writer-dashboard__alert {
+  margin: var(--spacing-md) auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.admin-dashboard__section,
+.revisor-dashboard__section,
+.writer-dashboard__section {
+  margin-bottom: var(--spacing-xl);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: var(--spacing-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-dashboard__section:hover,
+.revisor-dashboard__section:hover,
+.writer-dashboard__section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard__section-title,
+.revisor-dashboard__section-title,
+.writer-dashboard__section-title {
+  color: var(--color-primary);
+  font-weight: bold;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--color-primary-light);
+  display: flex;
+  align-items: center;
+}
+
+.admin-dashboard__section-title::before,
+.revisor-dashboard__section-title::before,
+.writer-dashboard__section-title::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 24px;
+  background-color: var(--color-primary);
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.admin-dashboard__table-container,
+.revisor-dashboard__table-container,
+.writer-dashboard__table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Admin content management card styles */
+.admin-content-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: var(--spacing-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.admin-content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.admin-content-card .card-header {
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-inverse);
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.admin-content-card .card-header i {
+  margin-right: 10px;
+  font-size: 1.25rem;
+}
+
+.admin-content-card .card-body {
+  padding: 0;
+}
+
+.admin-content-card .list-group {
+  border-radius: 0;
+}
+
+.admin-content-card .list-group-item {
+  border-left: none;
+  border-right: none;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.admin-content-card .list-group-item:last-child {
+  border-bottom: none;
+}
+
+.admin-content-card .list-group-item:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding-left: 25px;
+}
+
+.admin-content-card .list-group-item a {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;
+}
+
+.admin-content-card .list-group-item a:hover {
+  color: var(--color-primary-dark);
+}
+
+.admin-content-card .list-group-item i {
+  font-size: 1.2rem;
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+}
+
+.admin-content-card .list-group-item:hover i {
+  transform: scale(1.2);
+}
+
+.admin-content-card .list-group-item::after {
+  content: '\F285';
+  font-family: 'bootstrap-icons';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.admin-content-card .list-group-item:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(-5px);
+}
+
+/* Content management section container */
+.admin-content-management {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+/* Button styles for dashboard actions */
+.dashboard-btn {
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dashboard-btn i {
+  font-size: 0.9rem;
+}
+
+/* Updated dashboard button colors */
+.dashboard-btn-accept {
+  background-color: var(--color-accetta);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-accept:hover {
+  background-color: var(--color-accetta-dark);
+  transform: translateY(-2px);
+}
+
+.dashboard-btn-reject {
+  background-color: var(--color-rifiuta);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-reject:hover {
+  background-color: var(--color-rifiuta-dark);
+  transform: translateY(-2px);
+}
+
+.dashboard-btn-edit {
+  background-color: var(--color-modifica);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-edit:hover {
+  background-color: var(--color-modifica-dark);
+  transform: translateY(-2px);
+}
+
+.dashboard-btn-read {
+  background-color: var(--color-leggi);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-read:hover {
+  background-color: var(--color-leggi-dark);
+  transform: translateY(-2px);
+}
+
+.dashboard-btn-undo {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.dashboard-btn-undo:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Admin dashboard stats */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.admin-stat-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: var(--spacing-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.admin-stat-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.admin-stat-card__value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--color-primary-dark);
+}
+
+.admin-stat-card__label {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-top: 5px;
+}
+
+
+/* Stili per le tabelle nelle dashboard */
+.admin-dashboard__table,
+.revisor-dashboard__table,
+.writer-dashboard__table {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: var(--color-background);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admin-dashboard__table-header,
+.revisor-dashboard__table-header,
+.writer-dashboard__table-header {
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-inverse) !important;
+  border: none !important;
+}
+
+.admin-dashboard__table th,
+.revisor-dashboard__table th,
+.writer-dashboard__table th,
+.table-dark {
+  font-weight: 600;
+  padding: 15px;
+  border-bottom: none;
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-inverse) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.admin-dashboard__table td,
+.revisor-dashboard__table td,
+.writer-dashboard__table td {
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+.admin-dashboard__table tbody tr,
+.revisor-dashboard__table tbody tr,
+.writer-dashboard__table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.admin-dashboard__table tbody tr:hover,
+.revisor-dashboard__table tbody tr:hover,
+.writer-dashboard__table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}

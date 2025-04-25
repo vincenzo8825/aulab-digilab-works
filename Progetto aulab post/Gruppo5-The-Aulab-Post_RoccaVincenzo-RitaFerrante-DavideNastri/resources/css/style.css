@@ -1,0 +1,267 @@
+/* Importato il font Work Sans da Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* Font sottotitolo homepage */
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.7rem;
+}
+
+/* .eagle-lake-regular {
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+
+
+:root {
+  /* Colori principali */
+  --color-primary: #214252;    /* Blu scuro */
+  --color-secondary: #848d92;  /* Grigio medio */
+  --color-accent: #4d4c7d;     /* Viola scuro */
+
+   /* Varianti e sfumature  */
+
+  --color-primary-light: #2d5a71;
+  --color-primary-dark: #183240;
+  --color-secondary-light: #a1a8ac;
+  --color-secondary-dark: #6a7276;
+  --color-accent-light: #5f5e99;
+  --color-accent-dark: #3c3b61;
+  --color-leggi-dark: #1b9887;
+  --color-accetta-dark: #63629d;
+  --color-rifiuta-dark: #224253;
+  --color-modifica-dark: #546a75;
+
+   /* Colori dashboard pulsanti  */
+
+  --color-accetta: #7675bc;
+  --color-rifiuta: #2d586d;
+  --color-modifica: #66808e;
+  --color-leggi: #20b09d;
+
+
+  /* Colori di sfondo e testo */
+  --color-background: #ffffff;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-inverse: #ffffff;
+
+  /* Spaziature */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Bordi e ombre */
+  --border-radius: 0.25rem;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  /* Font */
+  --font-family-base: 'Work Sans', sans-serif;
+  --font-size-base: 15px;
+  --line-height-base: 23px;
+}
+
+/* Stili generali */
+/* Aggiungi questo dopo le variabili CSS */
+:root {
+  /* Mantieni le variabili esistenti */
+  --navbar-height: 80px;
+}
+
+body {
+  padding-top: var(--navbar-height);
+  overflow-x: hidden;
+}
+
+/* Stile per gli header delle pagine, simile a Nova */
+.page-header {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  margin-top: -20px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  z-index: 1;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.page-header__breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.page-header__breadcrumb a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.page-header__breadcrumb a:hover {
+  color: var(--color-primary);
+}
+
+.page-header__breadcrumb .separator {
+  margin: 0 0.5rem;
+  color: #adb5bd;
+}
+
+.page-header__breadcrumb .active {
+  color: var(--color-primary);
+}
+
+.main-content {
+  padding: 60px 0;
+}
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-main {
+    flex-grow: 1;
+}
+
+/* Utility classes */
+/* .text-custom-green {
+  color: var(--color-primary);
+}
+
+.bg-custom-green {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-inverse);
+}
+
+.btn-custom-green {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.btn-custom-green:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-inverse);
+} */
+
+
+.table-dark,
+.table > :not(caption) > * > .table-dark {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text-inverse) !important;
+}
+
+.table-dark {
+  --bs-table-bg: var(--color-primary) !important;
+  --bs-table-striped-bg: var(--color-primary) !important;
+  --bs-table-active-bg: var(--color-primary) !important;
+  --bs-table-hover-bg: var(--color-primary) !important;
+}
+
+.table tbody th,
+.admin-dashboard__table tbody th,
+.writer-dashboard__table tbody th,
+.revisor-dashboard__table tbody th,
+.articles-table__body th,
+.writer-articles-table__body th,
+.requests-table__body th {
+  background-color: transparent !important;
+  color: var(--color-text) !important;
+}
+
+.table thead th,
+.admin-dashboard__table thead th,
+.writer-dashboard__table thead th,
+.revisor-dashboard__table thead th,
+.articles-table__header th,
+.writer-articles-table__header th,
+.requests-table__header th {
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-inverse) !important;
+}
+
+/* Stili per i messaggi di notifica */
+.admin-content-alert {
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.admin-content-alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border-left: 5px solid #28a745;
+}
+
+.admin-content-alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-left: 5px solid #dc3545;
+}
+
+/* Stile specifico per i messaggi nella pagina di creazione articoli */
+.article-create-page .admin-content-alert {
+  margin-top: 30px;
+  margin-bottom: -10px;
+  animation: fadeInDown 0.5s ease-in-out;
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

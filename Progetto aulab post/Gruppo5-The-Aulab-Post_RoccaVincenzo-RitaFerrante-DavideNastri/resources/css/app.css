@@ -1,0 +1,21 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+@import'bootstrap-icons/font/bootstrap-icons.css';
+@import './style.css';
+
+/* Components */
+@import './components/navbar.css';
+@import './components/footer.css';
+@import './components/cards.css';
+@import './components/tables.css';
+@import './components/forms.css';
+@import './components/button.css';
+
+/* Views */
+@import './views/dashboard.css';
+@import './views/article.css';
+@import './views/auth.css';
+@import './views/careers.css';
+@import './views/home.css';
+@import 'views/admin-content.css';
+@import'./../css/chisiamo.css';
+@import './views/presentazione.css';
